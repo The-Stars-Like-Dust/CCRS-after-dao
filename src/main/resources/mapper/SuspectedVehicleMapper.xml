@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.theStarsLikeDust.generator.mapper.SuspectedVehicleMapper">
+
+    <resultMap id="BaseResultMap" type="top.theStarsLikeDust.generator.entity.SuspectedVehicle">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="vehicleId" column="vehicle_id" jdbcType="INTEGER"/>
+            <result property="date" column="date" jdbcType="TIMESTAMP"/>
+            <result property="reason" column="reason" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="INTEGER"/>
+            <result property="waringRecordId" column="waring_record_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,vehicle_id,date,
+        reason,type,waring_record_id
+    </sql>
+</mapper>

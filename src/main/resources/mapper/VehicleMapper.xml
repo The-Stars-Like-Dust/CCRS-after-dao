@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.theStarsLikeDust.generator.mapper.VehicleMapper">
+
+    <resultMap id="BaseResultMap" type="top.theStarsLikeDust.generator.entity.Vehicle">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="vehicleNumber" column="vehicle_number" jdbcType="VARCHAR"/>
+            <result property="brand" column="brand" jdbcType="VARCHAR"/>
+            <result property="carModel" column="car_model" jdbcType="VARCHAR"/>
+            <result property="power" column="power" jdbcType="VARCHAR"/>
+            <result property="seat" column="seat" jdbcType="INTEGER"/>
+            <result property="insurance" column="insurance" jdbcType="VARCHAR"/>
+            <result property="img" column="img" jdbcType="VARCHAR"/>
+            <result property="color" column="color" jdbcType="VARCHAR"/>
+            <result property="personnelId" column="personnel_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,vehicle_number,brand,
+        car_model,power,seat,
+        insurance,img,color,
+        personnel_id
+    </sql>
+</mapper>

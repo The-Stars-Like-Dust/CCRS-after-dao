@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.theStarsLikeDust.generator.mapper.PersonnelMapper">
+
+    <resultMap id="BaseResultMap" type="top.theStarsLikeDust.generator.entity.Personnel">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="birthday" column="birthday" jdbcType="DATE"/>
+            <result property="birthplace" column="birthplace" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="idnumber" column="idNumber" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,sex,
+        age,phone,birthday,
+        birthplace,address,idNumber
+    </sql>
+</mapper>

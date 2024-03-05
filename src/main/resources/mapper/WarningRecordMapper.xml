@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.theStarsLikeDust.generator.mapper.WarningRecordMapper">
+
+    <resultMap id="BaseResultMap" type="top.theStarsLikeDust.generator.entity.WarningRecord">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="typeOfOffenseId" column="type_of_offense_id" jdbcType="INTEGER"/>
+            <result property="unitId" column="unit_id" jdbcType="INTEGER"/>
+            <result property="policeunitId" column="policeUnit_id" jdbcType="INTEGER"/>
+            <result property="warningTime" column="warning_time" jdbcType="DATE"/>
+            <result property="riskGrade" column="risk_grade" jdbcType="INTEGER"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,type_of_offense_id,unit_id,
+        policeUnit_id,warning_time,risk_grade,
+        status
+    </sql>
+</mapper>

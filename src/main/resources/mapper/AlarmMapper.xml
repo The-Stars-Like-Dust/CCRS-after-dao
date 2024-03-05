@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.theStarsLikeDust.generator.mapper.AlarmMapper">
+
+    <resultMap id="BaseResultMap" type="top.theStarsLikeDust.generator.entity.Alarm">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="incomingCalls" column="incoming_calls" jdbcType="VARCHAR"/>
+            <result property="incomingCallTime" column="incoming_call_time" jdbcType="TIMESTAMP"/>
+            <result property="typeOfOffenseId" column="type_of_offense_id" jdbcType="INTEGER"/>
+            <result property="place" column="place" jdbcType="VARCHAR"/>
+            <result property="synopsis" column="synopsis" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,incoming_calls,incoming_call_time,
+        type_of_offense_id,place,synopsis
+    </sql>
+</mapper>
